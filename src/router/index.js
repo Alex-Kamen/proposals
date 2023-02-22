@@ -1,20 +1,20 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
-import IndexView from '../views/IndexView.vue';
-import Review from "@/views/Review";
+import MainPage from '../pages/MainPage.vue';
+import ReviewPage from "@/pages/ReviewPage";
 
 Vue.use(VueRouter);
 
 const routes = [
   {
     path: '/',
-    name: 'index',
-    component: IndexView
+    name: 'main',
+    component: MainPage
   },
   {
     path: '/review/:id',
     name: 'review',
-    component: Review
+    component: ReviewPage
   }
 ]
 

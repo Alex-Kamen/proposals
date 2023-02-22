@@ -1,15 +1,18 @@
 <template>
   <div>
-    <Proposal :proposal="proposal"/>
+    <ProposalReview :proposal="proposal"/>
   </div>
 </template>
 
 <script>
-import Proposal from "@/components/Proposal";
+import ProposalReview from "@/components/proposal/ProposalReview";
 
 export default {
   name: "Review",
-  components: {Proposal},
+
+  components: {
+    ProposalReview
+  },
 
   computed: {
     proposal() {
